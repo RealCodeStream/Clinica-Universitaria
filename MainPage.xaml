@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CureLife.MainPage"
+             BackgroundColor="White">
+
+    
+        
+        <AbsoluteLayout >
+            
+            <Frame Padding="0"
+                   BackgroundColor="{StaticResource PrimaryApp}"
+                   CornerRadius="15"
+                   HasShadow="True"
+                   VerticalOptions="FillAndExpand"
+                  
+                   AbsoluteLayout.LayoutBounds="0,0,1,0.2"
+                   AbsoluteLayout.LayoutFlags="All">
+                <Grid 
+                    Padding="60"
+                    BackgroundColor="{StaticResource PrimaryApp}"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand">
+                    <Image
+                        Source="menu_lines.svg"
+                        WidthRequest="50"
+                        HeightRequest="45"
+                        Margin="0,-50,325,0"
+                        VerticalOptions="Start"/>
+
+                </Grid>
+            </Frame>
+            
+            <Frame CornerRadius="50" 
+               BackgroundColor="White"
+               HeightRequest="70" 
+               WidthRequest="300"
+               AbsoluteLayout.LayoutBounds="0.5,0.17,-1,-1" 
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               HasShadow="True">
+                <StackLayout 
+                Orientation="Horizontal"
+                Padding="10,0,0,-9">
+                    <Entry Placeholder="Search..." 
+                       BackgroundColor="Transparent"
+                           TextColor="Black"
+                           FontSize="12"
+                       HorizontalOptions="FillAndExpand"/>
+                    <Image 
+                         Source="search.svg" 
+                         HeightRequest="28" 
+                         WidthRequest="30"
+                        Margin="0,0,0,10"
+                         BackgroundColor="Transparent"/>    
+                </StackLayout>
+            </Frame>
+
+            <ScrollView AbsoluteLayout.LayoutFlags="All"
+                        AbsoluteLayout.LayoutBounds="0,0,1.1,1">
+                <!--Services-->
+            <VerticalStackLayout Padding="23" >
+                <Label
+                    Text="Services"
+                    FontSize="35"
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource PrimaryApp}"
+                    HorizontalOptions="Center"
+                    Margin="-250,-65,-210,0"
+                    Padding="250"/>
+
+                <!--Frames Services-->
+                <!--First Frame-->
+                <Frame
+                    CornerRadius="19"
+                    BackgroundColor="{StaticResource PrimaryApp}"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"
+                    Margin="0,-220,0,0"
+                    WidthRequest="99"
+                    HeightRequest="104"
+                    HasShadow="True">
+                    <Image
+                        Source="pulmon.svg"
+                        WidthRequest="90">
+                    </Image>
+                </Frame>
+                <Frame
+                    CornerRadius="31"
+                    BorderColor="{StaticResource PrimaryApp}"
+                    WidthRequest="245"
+                    HeightRequest="104"
+                    HorizontalOptions="Center"
+                    Margin="85,-103,0,0"
+                    HasShadow="True">
+                    <StackLayout 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Spacing="3">
+                        <Label 
+                            Text="Surgery"
+                            FontSize="16"
+                            TextColor="{StaticResource PrimaryApp}"
+                            FontAttributes="Bold"
+                            Margin="0,-5,110,100"/>
+
+                        <Label
+                            Text="We offer surgeries with advanced technology and a highly trained medical team to ensure your safety."
+                            FontSize="10"
+                            TextColor="{StaticResource SecundaryApp}"
+                            Margin="0,-98,0,0"
+                            HeightRequest="100"/>
+
+                        
+                    </StackLayout>
+                </Frame>
+                <!-- Second frame-->
+                <Frame
+                    CornerRadius="19"
+                    BackgroundColor="{StaticResource PrimaryApp}"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"
+                    Margin="0,30,0,0"
+                    WidthRequest="99"
+                    HeightRequest="104"
+                    HasShadow="True">
+                    <Image
+                        Source="pill.svg"
+                        WidthRequest="90">
+                    </Image>
+                </Frame>
+                <Frame
+                    CornerRadius="31"
+                    BorderColor="{StaticResource PrimaryApp}"
+                    WidthRequest="245"
+                    HeightRequest="104"
+                    HorizontalOptions="Center"
+                    Margin="85,-103,0,0"
+                    HasShadow="True">
+                    <StackLayout 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Spacing="3">
+                        <Label 
+                            Text="Medicine"
+                            FontSize="16"
+                            TextColor="{StaticResource PrimaryApp}"
+                            FontAttributes="Bold"
+                            Margin="0,-5,110,100"/>
+
+                        <Label
+                            Text="We provide medications prescribed by our doctors."
+                            FontSize="10"
+                            TextColor="{StaticResource SecundaryApp}"
+                            Margin="0,-98,0,0"
+                            HeightRequest="100"/>
+
+                    </StackLayout>
+                </Frame>
+                <!--Third frame-->
+                <Frame
+                    CornerRadius="19"
+                    BackgroundColor="{StaticResource PrimaryApp}"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"
+                    Margin="0,30,0,0"
+                    WidthRequest="99"
+                    HeightRequest="104"
+                    HasShadow="True">
+                    <Image
+                        Source="adn.svg"
+                        WidthRequest="90">
+                    </Image>
+                </Frame>
+                <Frame
+                    CornerRadius="31"
+                    BorderColor="{StaticResource PrimaryApp}"
+                    WidthRequest="245"
+                    HeightRequest="104"
+                    HorizontalOptions="Center"
+                    Margin="85,-103,0,0"
+                    HasShadow="True">
+                    <StackLayout 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Spacing="3">
+                        <Label 
+                            Text="Laboratory"
+                            FontSize="16"
+                            TextColor="{StaticResource PrimaryApp}"
+                            FontAttributes="Bold"
+                            Margin="0,-5,110,100"/>
+
+                        <Label
+                            Text="Perform your laboratory analyses with reliable results and in the shortest time possible."
+                            FontSize="10"
+                            TextColor="{StaticResource SecundaryApp}"
+                            Margin="0,-98,0,0"
+                            HeightRequest="100"/>
+
+                    </StackLayout>
+                </Frame>
+                <!--Fourth frame-->
+                <Frame
+                    CornerRadius="19"
+                    BackgroundColor="{StaticResource PrimaryApp}"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Start"
+                    Margin="0,30,0,0"
+                    WidthRequest="99"
+                    HeightRequest="104"
+                    HasShadow="True">
+                    <Image
+                        Source="cita.svg"
+                        WidthRequest="90">
+                    </Image>
+                </Frame>
+                <Frame
+                        CornerRadius="31"
+                        BorderColor="{StaticResource PrimaryApp}"
+                        WidthRequest="245"
+                        HeightRequest="104"
+                        HorizontalOptions="Center"
+                        Margin="85,-103,0,0"
+                        HasShadow="True">
+                    <StackLayout 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Spacing="3">
+                        <Label 
+                            Text="Medical Appointment"
+                            FontSize="16"
+                            TextColor="{StaticResource PrimaryApp}"
+                            FontAttributes="Bold"
+                            Margin="0,-5,10,100"/>
+
+                        <Label
+                            Text="Schedule your medical appointment easily with our specialists. Personalized and fast attention for your well-being."
+                            FontSize="10"
+                            TextColor="{StaticResource SecundaryApp}"
+                            Margin="0,-98,0,0"
+                            HeightRequest="100"/>
+                    </StackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </AbsoluteLayout>
+    
+
+
+</ContentPage>

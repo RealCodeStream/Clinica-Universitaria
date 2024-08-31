@@ -1,0 +1,1 @@
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android"><background android:drawable="@mipmap/cure_logo1_background" /><foreground android:drawable="@mipmap/cure_logo1_foreground" /><monochrome android:drawable="@mipmap/cure_logo1_foreground" /></adaptive-icon>
